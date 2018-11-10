@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_view_title_bar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.turingoal.common.android.ui.layout.TgTitleContextLinearLayout
+                android:id="@+id/tclDiscoveryTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextStr="@string/string_breakdown_item_detail_discovery_time" />
+
+            <com.turingoal.common.android.ui.layout.TgTitleContextLinearLayout
+                android:id="@+id/tclSystemType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextStr="@string/string_breakdown_item_detail_system_type" />
+
+            <com.turingoal.common.android.ui.layout.TgTitleContextLinearLayout
+                android:id="@+id/tclPattern"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextStr="@string/string_breakdown_item_detail_pattern" />
+
+            <com.turingoal.common.android.ui.layout.TgTitleContextLinearLayout
+                android:id="@+id/tclCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextStr="@string/string_breakdown_item_detail_code" />
+
+            <com.turingoal.common.android.ui.layout.TgTitleContextLinearLayout
+                android:id="@+id/tclCarriage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextStr="@string/string_breakdown_item_detail_carriage" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="@string/string_breakdown_item_detail_discovery_desc"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/tvDiscoveryDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:layout_marginEnd="@dimen/dp_8"
+                android:layout_marginStart="@dimen/dp_8"
+                android:textSize="@dimen/sp_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#FFACABAB" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnZip"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_8"
+        android:background="@drawable/tg_common_btn_blue_style"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/string_breakdown_item_detail_zip"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_18" />
+</LinearLayout>

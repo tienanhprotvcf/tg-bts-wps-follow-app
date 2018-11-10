@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_view_title_bar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.turingoal.common.android.ui.layout.TgTitleContextLinearLayout
+                android:id="@+id/tclTrainSetTrips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextStr="@string/string_breakdown_detail_trainSet_trips" />
+
+
+            <com.turingoal.common.android.ui.layout.TgTitleContextLinearLayout
+                android:id="@+id/tclTrainSetCodeNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextStr="@string/string_breakdown_detail_trainSet_num" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dp_10" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnAdd"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/tg_common_btn_orange_style"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/string_breakdown_detail_add"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_18" />
+
+    <Button
+        android:id="@+id/btnZip"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:background="@drawable/tg_common_btn_blue_style"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/string_breakdown_detail_zip"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_18" />
+</LinearLayout>

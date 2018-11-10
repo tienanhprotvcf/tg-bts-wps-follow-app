@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.turingoal.bts.wps.follow">
+    <!-- 访问权限-访问网络连接 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 访问权限-获取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 访问权限-WIFI状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 访问权限-WIFI变化 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问权限-震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 访问权限-读取设备外部存储 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 访问权限-写入设备外部存储 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问权限-摄像头 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 访问权限-闪光灯 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 访问权限-设备信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 访问权限-拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 记录音频 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- application配置 -->
+    <application
+        android:name=".app.TgApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <!-- 应用启动页 -->
+        <activity
+            android:name=".ui.activity.common.TgWelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 登录页面 -->
+        <activity
+            android:name=".ui.activity.common.TgLoginActivity"
+            android:screenOrientation="portrait" />
+        <!--管理员登录-->
+        <activity
+            android:name=".ui.activity.common.TgAdminLoginActivity"
+            android:screenOrientation="portrait" />
+        <!--管理员功能界面-->
+        <activity
+            android:name=".ui.activity.common.TgAdminConfigActivity"
+            android:screenOrientation="portrait" />
+        <!--服务器配置页面-->
+        <activity
+            android:name=".ui.activity.common.TgAdminServiceActivity"
+            android:screenOrientation="portrait" />
+        <!-- 关于系统页面 -->
+        <activity
+            android:name=".ui.activity.common.TgAboutActivity"
+            android:screenOrientation="portrait" />
+        <!-- 系统帮助页面 -->
+        <activity
+            android:name=".ui.activity.common.TgHelpActivity"
+            android:screenOrientation="portrait" />
+        <!-- 个人信息页面 -->
+        <activity
+            android:name=".ui.activity.common.TgSelfInfoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改密码页面 -->
+        <activity
+            android:name=".ui.activity.common.TgChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <!-- 主页面 -->
+        <activity
+            android:name=".ui.activity.common.TgMainActivity"
+            android:screenOrientation="portrait" />
+        <!-- 故障管理list -->
+        <activity
+            android:name=".ui.activity.BreakdownRecordActivity"
+            android:screenOrientation="portrait" />
+        <!--故障详情-->
+        <activity
+            android:name=".ui.activity.BreakdownRecordDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--故障新建-->
+        <activity
+            android:name=".ui.activity.BreakdownRecordAddActivity"
+            android:screenOrientation="portrait" />
+        <!--故障item增加-->
+        <activity
+            android:name=".ui.activity.BreakdownRecordItemAddActivity"
+            android:screenOrientation="portrait" />
+        <!--故障item详情-->
+        <activity
+            android:name=".ui.activity.BreakdownRecordItemDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--视频播放页面-->
+        <activity
+            android:name=".ui.activity.VideoPlayerActivity"
+            android:screenOrientation="portrait" />
+        <!--照片查看-->
+        <activity
+            android:name=".ui.activity.common.TgPhotoActivity"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

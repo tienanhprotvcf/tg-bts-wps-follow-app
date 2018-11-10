@@ -1,0 +1,54 @@
+// 定义变量
+ext {
+    // 基本配置
+    configInfo = [
+            // 基本信息
+            baseName          : "tg-bts-pm", // baseName
+            fullName          : "随车机师故障提报终端", // 全称
+            shortName         : "随车机师故障提报终端", // 简称
+            applicationId     : "com.turingoal.bts.wps.follow",
+            versionCode       : 1, // App应用内部版本号
+            versionName       : "1.0.1", // App应用的版本每次，用户可以看到，就是我们发布的版本
+            // maven信息
+            repoType          : "remote", // remote发布到远程仓库 。local发布到本地仓库，方便调试，避免调试期间频繁上传到maven仓库
+            localRepositoryUrl: "file://E://turingoal//repo/",
+            serverlHost       : "47.94.19.152:8081", // maven 服务器
+            // 开发环境
+            compileSdkVersion : 28, // 编译所依赖的Android SDK的版本
+            buildToolsVersion : "28.0.2", // 构建该Android工程所用构建工具的版本
+            minSdkVersion     : 21, // 最低支持的Android系统的API Level，Android5.0
+            targetSdkVersion  : 28, // 基于哪个版本开发的
+            // 签名
+            signStorePassword : 'tg12345678abc', // 签名证书文件的密码
+            signKeyAlias      : 'tgBtsWps', // 签名证书中秘钥别名
+            signKeyPassword   : 'Tg12345678abc' // 签名证书中该秘钥的密码
+    ]
+    // 依赖库版本
+    libVersions = [
+            tgCommonLibCoreVersion  : "20181024-1@aar", // common包
+            tgBtsCommonLibVersion   : "20181026-2@aar", // bts common包
+            supportVersion          : "28.0.0", // 兼容包
+            supportConstraintVersion: "1.1.3", // android 新型布局使用依赖
+            annotationApiVersion    : "1.2", // 注解
+            lombokVersion           : "1.16.2", // lombok ，1.8.0还不能用
+            alogVersion             : "1.9.0",  // 日志
+            utilcodeVersion         : "1.20.4",  // 工具类包
+            arouterApiVersion       : "1.4.0",  // arouter页面路由。需要注意的是api 要与compiler匹配使用
+            arouterCompilerVersion  : "1.2.1",  // arouter页面路由。需要注意的是api 要与compiler匹配使用
+            butterknifeVersion      : "8.8.1",  // butterknife 注解绑定
+            gsonVersion             : "2.8.5",  // gson retrofitVersion         : "2.4.0",  // retrofit
+            retrofitLoggingVersion  : "3.9.0", // retrofit日志
+            retrofitVersion         : "2.4.0",  // retrofit
+            retrofitLoggingVersion  : "3.9.0", // retrofit日志
+            materialDialogsVersion  : "0.9.6.0",  // dialog。 2.0版本基于Kotlin
+            BRVAHVersion            : "2.9.41",  // 下拉刷新列表
+            pdfViewerVersion        : "3.1.0-beta.1",  // pdf预览
+            glideVersion            : "4.8.0", // glide图片加载
+            eventbusVersion         : "3.1.1",  // EventBus
+            waveVersion             : "1.0.0-alpha-1",  // 波纹
+            photoViewVersion        : "2.1.3",  // 缩放图片PhotoView
+            tgPhotopickerVersion    : "20180207-1@aar",  //  照片选择库
+            zip4jVersion            : "1.3.2", // zip包
+            bannerVersion           : "1.4.10" // 轮播图
+    ]
+}

@@ -1,0 +1,81 @@
+<resources>
+    <!--*********************** base *****************************-->
+    <string name="app_name">随车机师故障提报终端</string>
+    <string name="app_title">随车机师故障提报终端</string>
+    <string name="app_title_login">随车机师故障提报终端</string>
+    <string name="about_contact_name">北京铁道工程机电技术研究所股份有限公司</string>
+    <!--管理员重置密码-->
+    <string name="string_reset_hint">提示：\n\t输入正确管理员密码，将当前用户密码重置为原始密码！</string>
+    <string name="string_admin_password">管理员密码</string>
+    <string name="string_reset_failure">管理员密码错误，重置密码失败！</string>
+    <string name="string_reset_success">管理员密码正确，重置密码成功！</string>
+    <!--个人信息-->
+    <string name="string_user_id">工号</string>
+    <!--title-->
+    <string name="title_breakdown_add">新建记录</string>
+    <string name="title_breakdown">故障列表</string>
+    <string name="title_breakdown_detail">故障详情</string>
+    <string name="title_breakdown_item_add">添加故障</string>
+    <string name="title_breakdown_item_detail">故障详情</string>
+    <!--主页面-->
+    <string name="string_index_hint1">点击“新建记录”按钮或者此处</string>
+    <string name="string_index_hint2">开始新建记录</string>
+    <string name="string_logoff_hint">是否退出当前用户？</string>
+    <!--新建故障-->
+    <string name="string_breakdown_record_time">记录时间：</string>
+    <string name="string_breakdown_userid">用户工号：</string>
+    <string name="string_breakdown_trainSet_trips">故障车次：</string>
+    <string name="string_breakdown_trainSet_trips_hint">车次</string>
+    <string name="string_breakdown_trainSet_num">故障车组：</string>
+    <string name="string_breakdown_source">信息来源：</string>
+    <string name="string_breakdown_save">保存</string>
+    <string name="stirng_breakdown_no_save_hint">数据没有保存，是否返回？</string>
+    <string name="string_breakdown_no_trainSet_trips_hint">请输入具体车次</string>
+    <string name="string_breakdown_confirm_hint">故障数据保存后，不可以删除和修改，请确认检查无误后，点击确认按钮保存数据</string>
+    <string name="string_breakdown_add_success">新建故障成功</string>
+    <!--故障详情-->
+    <string name="string_breakdown_detail_userid">用户工号：</string>
+    <string name="string_breakdown_detail_trainSet_trips">车次：</string>
+    <string name="string_breakdown_detail_trainSet_num">车组：</string>
+    <string name="string_breakdown_detail_source">来源：</string>
+    <string name="string_breakdown_detail_add">录入故障</string>
+    <string name="string_breakdown_detail_zip">打包</string>
+    <string name="string_breakdown_detail_zip_success">打包成功</string>
+    <string name="string_breakdown_detail_zip_failure">打包失败，请联系管理员</string>
+    <!--故障item增加-->
+    <string name="string_breakdown_item_discovery_time">发现时间：</string>
+    <string name="string_breakdown_item_system_type">故障类型：</string>
+    <string name="string_breakdown_item_pattern">故障模式：</string>
+    <string name="string_breakdown_item_code">故障代码：</string>
+    <string name="string_breakdown_item_code_hint">代码</string>
+    <string name="string_breakdown_item_carriage">故障车厢：</string>
+    <string name="string_breakdown_item_discovery_desc">问题描述：</string>
+    <string name="string_breakdown_item_save">保存</string>
+    <string name="stirng_breakdown_item_no_save_hint">数据没有保存，是否返回？</string>
+    <string name="string_breakdown_item_confirm_hint">故障数据保存后，不可以删除和修改，请确认检查无误后，点击确认按钮保存数据</string>
+    <string name="string_breakdown_item_no_code_hint">请输入故障代码</string>
+    <string name="string_breakdown_item_no_carriage_hint">请选择故障车厢</string>
+    <string name="string_breakdown_item_no_discovery_desc_hint">请填写问题描述</string>
+    <string name="string_breakdown_item_add_success">记录故障成功</string>
+    <!--故障item详情-->
+    <string name="string_breakdown_item_detail_discovery_time">发现时间：</string>
+    <string name="string_breakdown_item_detail_system_type">故障类型：</string>
+    <string name="string_breakdown_item_detail_pattern">故障模式：</string>
+    <string name="string_breakdown_item_detail_code">故障代码：</string>
+    <string name="string_breakdown_item_detail_carriage">故障车厢：</string>
+    <string name="string_breakdown_item_detail_discovery_desc">问题描述：</string>
+    <string name="string_breakdown_item_detail_zip">打包</string>
+    <string name="string_breakdown_item_detail_zip_success">打包成功</string>
+    <string name="string_breakdown_item_detail_zip_failure">打包失败，请联系管理员</string>
+
+    <!-- label 确认-->
+    <string name="label_confirm">确  认</string>
+    <!-- label IP-->
+    <string name="label_ip">IP</string>
+    <!-- label 端口-->
+    <string name="label_port">端口</string>
+    <!-- hint 请输入ip地址-->
+    <string name="hint_input_ip">请输入服务器IP地址</string>
+    <!-- hint 请输入服务器端口-->
+    <string name="hint_input_port">请输入服务器端口</string>
+</resources>

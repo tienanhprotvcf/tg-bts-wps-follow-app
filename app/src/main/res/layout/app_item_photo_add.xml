@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg">
+
+    <com.turingoal.common.android.ui.widget.TgSquareImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_2" />
+
+    <ImageView
+        android:id="@+id/ivVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/dp_8"
+        android:src="@drawable/ic_play_circle_outline_black_24dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivPhotoDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/dp_4"
+        android:src="@drawable/ic_delete_pictures" />
+</FrameLayout>

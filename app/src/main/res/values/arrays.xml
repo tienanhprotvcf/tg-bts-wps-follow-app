@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--车次前面的字母-->
+    <string-array name="TrainSetTrips">
+        <item>C</item>
+        <item>D</item>
+        <item>G</item>
+    </string-array>
+    <!--故障来源-->
+    <string-array name="Source">
+        <item>乘务日志</item>
+    </string-array>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/tg_common_view_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_160"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/tg_common_layout_admin_config_ivLogo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:src="@drawable/tg_common_ic_blank" />
+
+        <ImageView
+            android:id="@+id/tg_common_layout_admin_config_ivTitleLogo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:src="@drawable/tg_common_ic_blank" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tg_common_layout_admin_config_tvReset"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_16"
+            android:text="重置密码"
+            android:textColor="#43596B"
+            android:textSize="@dimen/sp_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:background="@color/bg" />
+
+        <TextView
+            android:id="@+id/tg_common_layout_admin_config_tvIP"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackgroundBorderless"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_16"
+            android:text="服务器配置"
+            android:textColor="#43596B"
+            android:textSize="@dimen/sp_16" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tg_common_layout_admin_config_tvContactName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:text="@string/default_common_about_contact_name"
+        android:textColor="@color/grey" />
+</LinearLayout>
